@@ -7,7 +7,7 @@ for i in range(0,1000):
  operator = input("enter the operator +,-,/,*,power\n")
  if operator == "+":
   result = num1 + num2
-  print(f"{num1} + {num2} = {result} \n")
+  print(f"{num1} + {num2} = {result} \n") # here we are using f string to convert the different data types into string in an easy way
  if operator == "-":
   result = num1 - num2
   print(f"{num1} - {num2} = {result} \n")
