@@ -7,20 +7,20 @@ for i in range(0,1000):
  operator = input("enter the operator +,-,/,*,power\n")
  if operator == "+":
   result = num1 + num2
-  print(str(num1)+" + "+str(num2)+" = "+str(result)+"\n")
+  print(f"{num1} + {num2} = {result} \n")
  if operator == "-":
   result = num1 - num2
-  print(str(num1)+" - "+str(num2)+" = "+str(result)+"\n")
+  print(f"{num1} - {num2} = {result} \n")
  if operator == "*":
   result = num1 * num2
-  print(str(num1)+" X "+str(num2)+" = "+str(result)+"\n")
+  print(f"{num1} * {num2} = {result} \n")
  if operator == "**":
    result = num1**num2 #this operator will give us the power of number 1 for example num1**num2 = num1 Power num2
-   print(number1+"^"+number2+" = "+ str(result))
+   print(f"{num1}^{num2} = {result} \n")
  if operator == "/":
   if num2!=0:
    result = num1/num2
-   print(str(num1)+" / "+str(num2)+" = "+str(result)+"\n")
+   print(f"{num1} / {num2} = {result} \n")
   else:
    print("divide by zero error\n")
  operator = input("do you want to quit , press q to exit , press any key to continue\n")
