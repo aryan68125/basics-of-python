@@ -26,3 +26,7 @@ for i in range(0,1000):
  sum2String = str(sum2) #converting int to string
  result = sum1String + sum2String
  print(f"The compatibility percentage of {name1} and {name2} is {result}\n")
+ q = input("press enter to continue or press q to terminate the program\n")
+ if q == 'q':
+  print("Program terminated\n")
+  break
