@@ -1,10 +1,10 @@
 for i in range(0,1000):
  name1 = input("Enter the name of person 1\n")
  name2 = input("enter the name of person 2\n")
- name1LowerCase = name1.lower()
+ name1LowerCase = name1.lower() # String_variable_name.lower() will convert any upper case character in the string into lower case
  name2LowerCase = name2.lower()
- T1 = name1LowerCase.count("t")
- R1 = name1LowerCase.count("r")
+ T1 = name1LowerCase.count("t") #counts the number of occurances of a character in the string
+ R1 = name1LowerCase.count("r") #String_variable_name.count("a")
  U1 = name1LowerCase.count("u")
  E1 = name1LowerCase.count("e")
  L1 = name1LowerCase.count("l")
