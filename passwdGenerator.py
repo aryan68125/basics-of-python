@@ -28,21 +28,21 @@ for i in range(0,1000):
   break
  else:
   print("randomizing characters\n")
-  #loop for letters
+  #loop for randomizing letters
   L=[]
   for l in range(0,numberOfLetters):
    lengthLetter = len(letters)-1
    y=random.randint(0,lengthLetter)
    L.append(letters[y])
   
-  #loop for numbers
+  #loop for randomizing numbers
   N=[]
   for n in range(0,numberOfNumbers):
    lengthNumbers = len(numbers)-1
    z=random.randint(0,lengthNumbers)
    N.append(numbers[z])
   
-  #loop for symbols
+  #loop for randomizing symbols
   Sym=[]
   for s in range(0,numberOfSymbols):
    lengthSymbols=len(symbols)-1
@@ -51,18 +51,18 @@ for i in range(0,1000):
  
   a2 = 0 #index of L list
   b2 = 0 #index of N list
-  c2 = 0 #index for symbols
-  acc=[]
-  Passwd = ""
-  accLen = numberOfLetters + numberOfNumbers + numberOfSymbols - 1
+  c2 = 0 #index for Sym list
+  acc=[] # final list of randomized letters numbers and symbols
+  Passwd = "" # it will hold the final generated password
+  accLen = numberOfLetters + numberOfNumbers + numberOfSymbols - 1 # size of acc list
   for w in range(0,accLen):
-   if a2> numberOfLetters-1:
+   if a2> numberOfLetters-1: # set index to zero if it exceeds the max size of the list
    	a2=0
    if b2 > numberOfNumbers-1:
    	b2=0
    if c2 > numberOfSymbols-1:
    	c2=0
-  
+   #randomizing the place of appearance of symbols,letters and numbers in the list
    choice = random.randint(1,3)
    if choice==1:
     acc.append(L[a2])
@@ -73,7 +73,7 @@ for i in range(0,1000):
    elif choice == 3:
     acc.append(Sym[c2])
     c2 = c2+1
-   Passwd =str(Passwd) + str(acc[w])
+   Passwd =str(Passwd) + str(acc[w]) #conatinating each elemnts present inside acc into Passwd
   print("the generated password is = \n"+Passwd)
  print("press q to quit or press enter to continue\n")
  q=input()
