@@ -1,6 +1,5 @@
 #password generator
 import random
-from random import shuffle
 for i in range(0,1000):
  character = 'A'
  letters = []
@@ -10,6 +9,8 @@ for i in range(0,1000):
 
   # Using chr()+ord() will increament the character
   # prints P
+  #The chr() method returns a string representing a character whose Unicode code point is an integer.
+  #In Python, the ord() function accepts a string of unit length as an argument and returns the Unicode equivalence of the passed argument
   x = chr(ord(character) + j)
   letters.append(x)
  for k in range(0,10):
