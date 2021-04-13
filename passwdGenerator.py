@@ -14,7 +14,7 @@ for i in range(0,1000):
   letters.append(x)
  for k in range(0,10):
   numbers.append(k)
- print(" Enter the number of letters you want in your password. it should be less than 26\n")
+ print("Enter the number of letters you want in your password. it should be less than 26\n")
  numberOfLetters = int(input())
  numberOfNumbers = int(input("Enter the number of numbers you want in your password it should be less than 9\n"))
  numberOfSymbols = int(input("Enter the number of Symbols in your password it should be less than 9\n"))
@@ -74,7 +74,7 @@ for i in range(0,1000):
     acc.append(Sym[c2])
     c2 = c2+1
    Passwd =str(Passwd) + str(acc[w])
-  print("the generated password is = "+Passwd)
+  print("the generated password is = \n"+Passwd)
  print("press q to quit or press enter to continue\n")
  q=input()
  if q=='q' or q=='Q':
