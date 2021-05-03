@@ -1,5 +1,19 @@
 #password generator
 import random
+from os import system
+#download and install art pip3 install art in your linux machine or mac osX then import art
+from art import *
+program=text2art("Password") # Return ASCII text (default font) and default chr_ignore=True 
+print(program)
+print("\n")
+terminated=	text2art("generator")
+print(terminated)
+print("\n")
+
+#clear screen function
+def clear():
+    _ = system('clear') #only for linux for windows _ = system('cls')
+
 for i in range(0,1000):
  character = 'A'
  letters = []
@@ -78,6 +92,13 @@ for i in range(0,1000):
   print("the generated password is = \n"+Passwd)
  print("press q to quit or press enter to continue\n")
  q=input()
+ #clear the screen
+ clear()
  if q=='q' or q=='Q':
- 	print("program terminated\n")
- 	break
+     program=text2art("Program") # Return ASCII text (default font) and default chr_ignore=True 
+     print(program)
+     print("\n")
+     terminated=	text2art("Terminated")
+     print(terminated)
+     print("\n")
+     break
