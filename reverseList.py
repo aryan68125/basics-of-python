@@ -17,6 +17,11 @@ system_reverse = list(reversed(systems))
 print("printing the entire system_reverse List")
 print(system_reverse)
 
+#reversing list using reverse function
+# List Reverse
+systems.reverse()
+print(f"printing the actual system list after modifying it and reversing it\n{systems}")
+
 #reversing a list without using a reverse function
 numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 print(f"numbers list before modification reverse {numbers}")
