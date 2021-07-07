@@ -26,13 +26,13 @@ for i in range(0,999999999):
     }
     def cal():
         #user input
-        num1 = int(input("Enter the first number\n"))
+        num1 = float(input("Enter the first number\n"))
         for symbols in operation:
             print (symbols)
         should_continue_with_previous_answer = True
         while should_continue_with_previous_answer:
             operation_symbol = input("Choose the operation\n")
-            num2 = int(input("Enter the second number\n"))
+            num2 = float(input("Enter the second number\n"))
         
             calculation_function = operation[operation_symbol]
             answer = calculation_function(num1,num2)
